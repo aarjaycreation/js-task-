@@ -1,0 +1,29 @@
+/* ██████████ HEADER START ██████████ */
+ul li{
+    
+    list-style: none;
+}
+.result {
+    font-size: 22px;
+  
+    text-transform: uppercase;
+}
+.result span{
+    color: green;
+    font-weight: 700;
+}
+
+.error {
+    font-size: 22px;
+   
+    text-transform: uppercase;
+}
+.error span{
+   
+    font-weight: 700;
+   
+}
+button{
+  border-radius: 0.4rem;
+  border: 2px solid var(--clr-neutral-100);
+}

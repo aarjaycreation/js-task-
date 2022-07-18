@@ -1,0 +1,86 @@
+<!--██   ██ ████████ ███    ███ ██      
+    ██   ██    ██    ████  ████ ██      
+    ███████    ██    ██ ████ ██ ██      
+    ██   ██    ██    ██  ██  ██ ██      
+    ██   ██    ██    ██      ██ ███████-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2E85EF" />
+  <meta name="author" content="Rahul jangir">
+  <meta name="email" content="aarjayjangir@gmail.com">
+  <meta name="copyright" content="Rahul jangir 2022" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="assets/fovicon/icons8-bookmark-48.png" />
+  <!-- boostrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- ======= main css ======= -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+</head>
+<body>
+  <!-- ██████████ HEADER START ██████████ -->
+  <header>
+
+  </header>
+  <!-- ██████████ HEADER END ██████████ -->
+
+  <!-- ██████████ MAIN START ██████████ -->
+  <main>
+   <!-- =====main container start=====  -->
+    <div class="container">
+      <h1 class="d-flex justify-content-center my-5 text-accent-400">Calculator</h1>
+      <!-- form start  -->
+      <form id="aarjayform">
+          <div class="d-flex align-items-center justify-content-center gap-3">
+            <div class="d-flex flex-column">
+              <label for="number">Enter number</label>
+              <input name="num1" type="text" id="inputFirst" />
+            </div>
+            <div class="d-flex flex-column">
+              <label for="number">Enter number</label>
+              <input name="num2" type="text" id="inputSecond" />
+            </div>
+           
+          </div>
+        
+          <ul class="d-flex align-items-center justify-content-center gap-3 my-5">
+            <li><button type="button" onClick="Addition()">Addition</button></li>
+            <li>
+            <button type="button" onClick="Subtraction()">Subtraction</button></li>
+            <li>
+            <button type="button" onClick="divide()">Divide</button></li>
+            <li>
+            <button type="button" onClick="multiply()">Multiply</button></li>
+          </ul>
+      </form>
+      <!-- form end  -->
+      <div >
+        <div class="result">
+          <p>Result : 
+          <span id = "result"></span> <br>
+        </div>
+        <div class="error">
+          <p>Error :
+          <span id="error"></span>
+        </div>
+       
+      </div>
+      
+    </div>
+  </main>
+
+  <!-- ██████████ MAIN END ██████████ -->
+  <!-- ██████████ FOOTER START ██████████ -->
+  <footer>
+  </footer>
+  <!-- ██████████ FOOTER END ██████████ -->
+  <!-- ======= main js files =======  -->
+    <script src="assets/js/main.js" defer></script>
+</body>
+</html>
