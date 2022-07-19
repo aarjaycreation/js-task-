@@ -1,8 +1,9 @@
 /* ██████████ HEADER START ██████████ */
 ul li{
-    
+
     list-style: none;
 }
+
 .result {
     font-size: 22px;
   
@@ -24,6 +25,16 @@ ul li{
    
 }
 button{
+    padding: 4px;
   border-radius: 0.4rem;
-  border: 2px solid var(--clr-neutral-100);
+ outline: none;
+border: 1px solid var(--clr-accent-400);
+ box-shadow: 0 -1px 3px var(--clr-accent-400);
+}
+
+label{
+    font-size: 1.5rem;
+}
+form{
+ border: 1px dotted var(--clr-neutral-100);
 }
