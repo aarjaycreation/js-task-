@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      <input type="number" placeholder="Enter first number" id="inputFirst" />
+    </p>
+    <p>
+      <select id="operator">
+        <option>select operator</option>
+        <option>+</option>
+        <option>/</option>
+        <option>-</option>
+        <option>*</option>
+      </select>
+    </p>
+    <p>
+      <input type="number" placeholder="Enter second number" id="inputSecond" />
+    </p>
+    <p><button onclick="calculator()">Calculate</button></p>
+    <p id="showResult"></p>
+    <p id="showError"></p>
+
+    <script>
+      function calculator() {
+        const inputFirst = document.getElementById('inputFirst').value;
+        const inputSecond = document.getElementById('inputSecond').value;
+        const operator = document.getElementById('operator').value;
+        const showResult = document.getElementById('showResult');
+        const showError = document.getElementById('showError');
+
+        switch (operator) {
+          // addition
+          case "+":
+            // check the  input field
+            if (
+              (inputFirst, inputFirst) == "" ||
+              (inputFirst, inputFirst) == null
+            ) {
+              showError.innerText = "please enter first number";
+              showError.style.color = "red";
+              return false;
+            }
+            // check the second input field
+            else if (inputFirst.length == 0 || inputSecond.length == 0) {
+              showError.innerText = "please enter second number";
+              showError.style.color = "red";
+            }
+            // all validation clear than run code
+            else {
+              result = parseInt(inputFirst) + parseInt(inputSecond);
+              document.getElementById("showResult").innerHTML = result;
+              showError.innerText = "no error";
+              showError.style.color = "green";
+            }
+            break;
+          // divide
+
+          case "/":
+            result = parseInt(inputFirst) / parseInt(inputSecond);
+            document.getElementById("showResult").innerHTML = result;
+            break;
+          //Subtraction
+          case "-":
+            result = parseInt(inputFirst) - parseInt(inputSecond);
+            document.getElementById("showResult").innerHTML = result;
+            break;
+          // multiply
+          case "*":
+            result = parseInt(inputFirst) * parseInt(inputSecond);
+            document.getElementById("showResult").innerHTML = result;
+            break;
+          // default call
+          default:
+            // document.getElementById('showResult').innerHTML = result;
+            break;
+        }
+        //         if((showResult.value.length === 0)){
+        //     console.log('true')
+        // }else{
+        //     console.log('false')
+        // }
+      }
+    </script>
+  </body>
+</html>
