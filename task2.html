@@ -104,7 +104,18 @@ const operator = document.getElementById('operator').value;
             }
 }
 
-
+// mouse right click option menu 
+if (document.addEventListener) {
+  document.addEventListener('contextmenu', function(e) {
+    alert("we r try to open box"); //here you draw your own menu
+    e.preventDefault();
+  }, false);
+} else {
+  document.attachEvent('oncontextmenu', function() {
+    alert("You've tried to open context menu");
+    window.event.returnValue = false;
+  });
+}
 
     </script>
   </body>
